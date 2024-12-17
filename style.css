@@ -54,11 +54,6 @@ ul {
 	transition: width 0.3s ease-out;
 }
 
-.header a:hover:after,
-.header a:focus:after {
-	width: 100%;
-}
-
 main {
     margin-top: 20px;
 }
@@ -224,10 +219,6 @@ article {
     filter: grayscale(100%);
 }
 
-.project:hover img {
-    filter: grayscale(0%);
-}
-
 .backend {
     display: flex;
     justify-content: center;
@@ -275,15 +266,35 @@ article {
     .about_me {
         flex-direction: column-reverse;
     }
+    .about_me__information {
+        width: 100%;
+    }
+    .about_me__information h1, h2 {
+        text-align: center;
+    }
  }
 
  @media screen and (max-width: 500px) {
     .education_point {
         flex-direction: column;
-        justify-content: flex-start;
+        align-items: flex-start;
     }
     .work_point {
         flex-direction: column;
-        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .date {
+        border-right: none;
+        height: auto;
     }
  }
+
+ @media (hover: hover) and (pointer: fine) {
+    .header a:hover:after,
+    .header a:focus:after {
+        width: 100%;
+    }
+    .project:hover img {
+        filter: grayscale(0%);
+    }
+}
