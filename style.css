@@ -123,6 +123,12 @@ article {
     gap: 20px;
 }
 
+.certificates_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .education_point {
     display: flex;
     flex-direction: row;
@@ -139,12 +145,30 @@ article {
     gap: 10px;
 }
 
+.certificates_point {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
 .date {
     min-width: 170px;
-    width: 30%;
-    height: 90px;
-    border-right: 1px solid black;
-    padding: 5px;
+}
+
+.name {
+    border-left: 1px solid black;
+    padding: 0px 0px 0px 15px;
+}
+
+.certificates_point .name {
+    border-left: none;
+    padding: 0px;
+}
+
+.name ul {
+    padding: 0px;
 }
 
 .specialization {
@@ -283,9 +307,8 @@ article {
         flex-direction: column;
         align-items: flex-start;
     }
-    .date {
-        border-right: none;
-        height: auto;
+    .name {
+        border-left: none;
     }
  }
 
