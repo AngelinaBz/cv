@@ -171,6 +171,10 @@ article {
     padding: 0px;
 }
 
+.name ul li {
+    margin-bottom: 10px;
+}
+
 .specialization {
     color: var(--secondary-color);
     margin-bottom: 5px;
